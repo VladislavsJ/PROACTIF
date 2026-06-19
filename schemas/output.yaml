@@ -248,7 +248,13 @@ output_packet:
       type: "boolean"
       required: true
       example: false
-
+      
+    degraded_sensor_ids:
+      type: "list_string"
+      required: true
+      description: "Sensors available but degraded."
+      example: []
+      
     calibration_valid:
       type: "boolean"
       required: true
