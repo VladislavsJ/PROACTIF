@@ -43,13 +43,13 @@ output_packet:
       required: true
       description: "Timestamp when the RTU algorithm produced this output."
       example: 1781000000180000000
-
-    input_packet_timestamp_ns:
+      
+    input_packet_id:
       type: "integer"
       required: true
-      description: "Timestamp of the fused 360-degree input packet used for this output."
-      example: 1781000000100000000
-
+      description: "Unique ID of the fused 360-degree input packet used for this output."
+      example: 42
+      
     frame_id:
       type: "string"
       required: true
